@@ -30,6 +30,7 @@ export default function Home() {
               .tecContainer{
                     margin-bottom: 0px;
                     text-align: center;
+                    background: linear-gradient(90deg, rgba(0, 0, 255, 0.7), rgba(0, 255, 0, 0.7) );
               }
               .circulo{
                 width: 140px;
@@ -52,17 +53,16 @@ export default function Home() {
             <p className="lead pb-4">Desenvolvedor JavaScript</p>
           </div>
 
-          <div class="row">
-            <div class="col-lg-4">
+          <div className="row">
+            <div className="col-lg-4">
               <div className="rounded-circle circulo centralizar" >
-                {/* <i class="fas fa-camera"></i> */}
                 <FontAwesomeIcon icon={faJsSquare} size="lg" />
               </div>
 
               <h2 className="mt-4 mb-4">JavaScript</h2>
               <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
             </div>
-            <div class="col-lg-4">
+            <div className="col-lg-4">
               <div className="rounded-circle circulo centralizar" >
                 <FontAwesomeIcon icon={faNodeJs} size="lg" />
               </div>
@@ -70,7 +70,7 @@ export default function Home() {
               <h2 className="mt-4 mb-4">Node.JS</h2>
               <p>Node.js trata-se de um software open-source, cross-platform, e de um runtime de JavaScript que execute código de JavaScript a nível backend e frontend. O runtime de JavaScript é constituído pelos seguintes commandos - node package manage, e npx.</p>
             </div>
-            <div class="col-lg-4">
+            <div className="col-lg-4">
               <div className="rounded-circle circulo centralizar" >
                 <FontAwesomeIcon icon={faReact} size="lg" />
               </div>
