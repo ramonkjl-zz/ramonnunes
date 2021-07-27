@@ -1,44 +1,7 @@
-import { SiJavascript, SiMongodb, SiMysql, SiNextDotJs, SiNodeDotJs, SiReact, SiTypescript, SiPostgresql } from 'react-icons/si'
 
-import { theme } from "../global/styles/theme"
 import styles from '../styles/home.module.css'
 import { Technology } from '../components/Technology'
-
-const technologies = [
-  {
-    name: 'JavaScript',
-    logo: <SiJavascript size='4rem' />
-  },
-  {
-    name: 'TypeScript',
-    logo: <SiTypescript size='4rem' />
-  },
-  {
-    name: 'NodeJS',
-    logo: <SiNodeDotJs size='4rem' />
-  },
-  {
-    name: 'ReactJS',
-    logo: <SiReact size='4rem' />
-  },
-  {
-    name: 'NextJS',
-    logo: <SiNextDotJs size='4rem' />
-  },
-  {
-    name: 'MongoDB',
-    logo: <SiMongodb size='4rem' />
-  },
-  {
-    name: 'MySQL',
-    logo: <SiMysql size='4rem' />
-  },
-  {
-    name: 'Postgress',
-    logo: <SiPostgresql size='4rem' />
-  }
-
-]
+import { technologies } from '../data/technologies'
 
 export default function Index() {
   return (
