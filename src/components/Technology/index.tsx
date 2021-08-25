@@ -1,4 +1,5 @@
 import styles from './styles.module.css'
+import { TiltComponent } from '../Tilt'
 
 type Props = {
   Icon: JSX.Element
@@ -6,14 +7,13 @@ type Props = {
 }
 
 export const Technology = ({ Icon, title }: Props) => {
-  return (
-    <div className={styles.techContainer}>
 
+  return (
+    <TiltComponent options={{ max: 77, scale: 1.3, perspective: 3000 }}>
       <div className={styles.techCircle}>
         {Icon}
       </div>
       <h2 className={styles.techHeading}>{title}</h2>
-
-    </div>
+    </TiltComponent>
   )
 }
