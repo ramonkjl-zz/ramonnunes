@@ -10,10 +10,12 @@ export const Technology = ({ Icon, title }: Props) => {
 
   return (
     <TiltComponent options={{ max: 77, scale: 1.3, perspective: 3000 }}>
-      <div className={styles.techCircle}>
-        {Icon}
+      <div className={styles.techContainer}>
+        <div className={styles.techCircle}>
+          {Icon}
+        </div>
+        <h2 className={styles.techHeading}>{title}</h2>
       </div>
-      <h2 className={styles.techHeading}>{title}</h2>
     </TiltComponent>
   )
 }
